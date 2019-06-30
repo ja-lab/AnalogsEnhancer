@@ -99,10 +99,10 @@ void patchData(uint8_t *data) {
 void loadConfig(void) {
 
 	// Just in case the folder doesn't exist
-	ksceIoMkdir("ux0:data/AnalogsEnhancer", 0777); 
+	//ksceIoMkdir("ur0:tai", 0777); 
 	
 	// Loading generic config file
-	SceUID fd = ksceIoOpen("ux0:/data/AnalogsEnhancer/config.txt", SCE_O_RDONLY, 0777);
+	SceUID fd = ksceIoOpen("ur0:tai/AnaEnCfg.txt", SCE_O_RDONLY, 0777);
 	if (fd >= 0){
 		ksceIoRead(fd, buffer, 32);
 		ksceIoClose(fd);
