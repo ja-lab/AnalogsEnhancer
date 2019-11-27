@@ -1,4 +1,4 @@
-**AnalogsEnhancer v.1.0 by Rinnegatamante**
+**AnalogsEnhancer v.1.1 by Rinnegatamante**
 (ur0 mod by Yoti)
 
 This little kernel plugin allows users to improve their experience with PSVITA analogs. It allows to:
@@ -19,12 +19,14 @@ AnaEnCfg.txt has 4 values that can be edited:
 
 Example of AnaEnCfg.txt:
 
-`left=0,n;right=0,n`
+`left=0,n;right=0,n;n`
 
 First 0 value is the deadzone for left analog.
 
 Second parameter for left is either if you want to enable or disable software rescaling (can be y or n which stands for yes and no).
 The same applies for right analog.
+
+Last one for enabling analog_wide patch.
 
 **Credits:**
 - rsn8887 for the radial scaling algorithm used for software rescaling.**
