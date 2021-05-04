@@ -21,7 +21,9 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+.DS_Store
 
+# Build files
 AnalogsEnhancer
 AnalogsEnhancer.skprx
 AnalogsEnhancer.skprx.out
@@ -30,4 +32,5 @@ cmake_install.cmake
 CMakeCache.txt
 Makefile
 CMakeFiles
+
 
