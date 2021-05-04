@@ -21,3 +21,13 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+
+AnalogsEnhancer
+AnalogsEnhancer.skprx
+AnalogsEnhancer.skprx.out
+AnalogsEnhancer.velf
+cmake_install.cmake
+CMakeCache.txt
+Makefile
+CMakeFiles
+
