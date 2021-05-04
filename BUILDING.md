@@ -4,7 +4,7 @@ Install vitasdk https://vitasdk.org
 
 Brief Instructions:
 
-Install required prequisites:
+Install required pre-requisites:
 ```
 brew install wget cmake
 export VITASDK=~/Documents/code/vitasdk
