@@ -32,5 +32,6 @@ cmake_install.cmake
 CMakeCache.txt
 Makefile
 CMakeFiles
-
+test
+.test.c.swp
 
