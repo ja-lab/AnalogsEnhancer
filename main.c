@@ -60,9 +60,9 @@ void rescaleAnalogs(uint8_t *x, uint8_t *y, int dead) {
         absAnalogY = fabs(analogY);
         if (absAnalogX > 127.0f || absAnalogY > 127.0f){
             if (absAnalogX > absAnalogY)
-                clampingFactor = 127.0f / absAnalogX;
+                clampingFactor = 128.0f / absAnalogX; // o/p 255 for 255 i/p (was 127.0f)
             else
-                clampingFactor = 127.0f / absAnalogY;
+                clampingFactor = 128.0f / absAnalogY; // o/p 255 for 255 i/p (was 127.0f)
         }
  
         *x = (uint8_t) ((clampingFactor * analogX) + 127.0f);
