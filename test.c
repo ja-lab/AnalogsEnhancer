@@ -1,4 +1,4 @@
-//PC/Mac tester - Compile with gcc test.c -o test
+//console tester - Compile with gcc test.c -o test
 
 #include <stdio.h>
 #include <stdint.h>
@@ -61,12 +61,25 @@ int main()
 	uint8_t x=255;
 	uint8_t y=255;
 	int i=0;
+	int j=0;
+	printf("dz,");
 	for(i=0;i<=255;i++)
 	{
-		x=i;
-		y=i;
-		rescaleAnalogs(&x,&y,3);
-		printf("%d,%d,%d\r\n",i,x,y);
-		//printf("%d\r\n",y);
+		printf("%d,",i);
+	}
+	printf("\r\n");
+	for(j=0;j<64;j++)
+	{
+		printf("%d,",j);
+		for(i=0;i<=255;i++)
+		{
+			x=i;
+			y=i;
+			rescaleAnalogs(&x,&y,j);
+			//printf("%d,%d,%d\r\n",i,x,y);
+			//printf("%d\r\n",y);
+			printf("%d,",x);
+		}
+		printf("\r\n");
 	}
 }
